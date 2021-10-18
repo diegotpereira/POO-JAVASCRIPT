@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO Javascript</title>
+    <script type="text/javascript">
+        function Carro() {
+
+            var Marca = "Sem Marca";
+            var Modelo = "Sem Modelo";
+
+            this.setMarca = SetMarca;
+            this.SetModelo = SetModelo;
+            this.ShowMarca = DisplayMarca;
+            this.ShowModelo = DisplayModelo;
+
+            function DisplayMarca() {
+                alert(Marca);
+            }
+
+            function DisplayModelo() {
+                alert(Modelo);
+            }
+
+            function SetMarca(_marca) {
+                Marca = _marca;
+            }
+
+            function SetModelo(_modelo) {
+                Modelo = _modelo;
+            }
+        }
+
+        var carro = new Carro();
+        carro.setMarca("Ford");
+        carro.SetModelo('Ka');
+
+        carro.ShowMarca();
+        carro.ShowModelo();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
